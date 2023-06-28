@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=League+Spartan');
+
+header {
+    position: relative;
+    background: #1c1d25;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.subContainer1 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    /* vertically center align items */
+    padding-left: 10%;
+    text-align: flex-end;
+}
+
+.subContainer2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    /* vertically center align items */
+    padding-left: 10%;
+    text-align: flex-end;
+}
+
+a {
+    color: #b0b2c3;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: .5px;
+}
+
+a.router-link-active {
+    position: relative;
+    text-decoration-color: #1c1d25;
+    
+}
+
+
+a.router-link-active::after {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    /* Adjust the value as needed to control the distance of the underline from the text */
+    left: 14%;
+    width: 73%;
+    height: 2px;
+    /* Adjust the height of the underline as needed */
+    background-color: white;
+    /* Replace 'red' with the desired color for the primary underline */
+    visibility: hidden;
+    transform-origin:left;
+    transform: scaleX(0) ;
+    transition: transform .2s ease-in-out;
+    /* Adjust the duration and easing as desired */
+}
+
+a.router-link-active::before {
+    content: '';
+    position: absolute;
+    bottom: 11px;
+    /* Adjust the value as needed to control the distance of the underline from the text */
+    left: 14%;
+    width: 73%;
+    height: 2px;
+    /* Adjust the height of the underline as needed */
+    background-color: yellow;
+    /* Replace 'blue' with the desired color for the trailing underline */
+    visibility: hidden;
+    transform-origin: left;
+    transform: scaleX(0) ;
+    transition: transform .4s ease-in-out;
+    /* Adjust the duration and easing as desired */
+}
+
+a.router-link-active:hover::after,
+a.router-link-active:hover::before {
+    
+    visibility: visible;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+a.router-link-active:not(:hover)::after,
+a.router-link-active:not(:hover)::before {
+
+    visibility: visible;
+    transform-origin: right;
+    transform: scaleX(0);
+    
+}
+
+
+
+a:hover{
+    transition: color .2s ease-out;
+    color: white;
+}
+
+a:not(:hover){
+    transition: color .3s ease-out;
+    color: #b0b2c3;
+}
+
+
+
+a.logo {
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    padding: 1rem;
+    text-decoration-color: #1c1d25;
+
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul a {
+    padding: 1rem;
+    display: inline-block;
+}
