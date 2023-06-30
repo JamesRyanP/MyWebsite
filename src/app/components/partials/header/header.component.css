@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=League+Spartan');
 
+/* https://coolors.co/palette/1e1e1e-00eeff-ff0061-e5ff00-ffffff */
 header {
-    position: relative;
-    background: #1c1d25;
-    padding: 0;
+    background-color: #1c1d25;
 }
 
 .container {
-    margin: 0 auto;
+    position: absolute;
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
 
 }
 
@@ -42,7 +46,7 @@ a {
 a.router-link-active {
     position: relative;
     text-decoration-color: #1c1d25;
-    
+
 }
 
 
@@ -58,8 +62,8 @@ a.router-link-active::after {
     background-color: white;
     /* Replace 'red' with the desired color for the primary underline */
     visibility: hidden;
-    transform-origin:left;
-    transform: scaleX(0) ;
+    transform-origin: left;
+    transform: scaleX(0);
     transition: transform .2s ease-in-out;
     /* Adjust the duration and easing as desired */
 }
@@ -73,18 +77,18 @@ a.router-link-active::before {
     width: 73%;
     height: 2px;
     /* Adjust the height of the underline as needed */
-    background-color: yellow;
+    background-color: #e5ff00;
     /* Replace 'blue' with the desired color for the trailing underline */
     visibility: hidden;
     transform-origin: left;
-    transform: scaleX(0) ;
-    transition: transform .4s ease-in-out;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
     /* Adjust the duration and easing as desired */
 }
 
 a.router-link-active:hover::after,
 a.router-link-active:hover::before {
-    
+
     visibility: visible;
     transform-origin: left;
     transform: scaleX(1);
@@ -96,17 +100,17 @@ a.router-link-active:not(:hover)::before {
     visibility: visible;
     transform-origin: right;
     transform: scaleX(0);
-    
+
 }
 
 
 
-a:hover{
+a:hover {
     transition: color .2s ease-out;
     color: white;
 }
 
-a:not(:hover){
+a:not(:hover) {
     transition: color .3s ease-out;
     color: #b0b2c3;
 }
@@ -132,3 +136,35 @@ ul a {
     padding: 1rem;
     display: inline-block;
 }
+
+.leftSideBar {
+    position: absolute;
+    background-color: #141414;
+    height: 100%;
+    width: 50px;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+
+}
+
+.svg-container svg path{
+    fill:#b0b2c3;
+    transition: fill 0.2s ease;
+}
+
+
+.svg-container:hover svg path{
+    fill: #00eeff;
+
+}
+
+.svg_link{
+    cursor: pointer;
+    text-decoration: none;
+}
+
