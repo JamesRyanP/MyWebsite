@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=League+Spartan');
+
+.container {
+    position: absolute;
+    /* background-color: #1c1d25;*/
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin-left: 10%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+   
+}
+
+h1.name{
+    margin-top: -15px;
+}
+
+h2{
+    margin-top: -15px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #00eeff;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+
+
+    flex-direction: horizontal;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #b0b2c3;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.white{
+    color:#b0b2c3;
+}
+
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+h1.bounce:hover {
+    
+    animation: bounce 0.5s ease-in-out;
+    color: #e5ff00;
+}
