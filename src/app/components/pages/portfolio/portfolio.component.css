@@ -89,8 +89,13 @@ h4{
     font-size: 20px;
     font-weight: 100;
     letter-spacing: .5px;
-    color: white;
+    color: #00eeff;
     font-family: 'League Spartan', Helvetica, Arial, sans-serif;
     line-height: 1.2;
     margin-top: 10px;
+    flex-direction: horizontal;
+}
+
+.white{
+    color:#b0b2c3;
 }

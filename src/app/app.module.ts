@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/partials/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { SkillsComponent } from './components/pages/skills/skills.component';
-import { ResumeComponent } from './components/pages/resume/resume.component';
+import { LoadingAnimationComponent } from './loading-animation/loading-animation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { ResumeComponent } from './components/pages/resume/resume.component';
     HomeComponent,
     PortfolioComponent,
     SkillsComponent,
-    ResumeComponent
+    LoadingAnimationComponent
   ],
   imports: [
     BrowserModule,

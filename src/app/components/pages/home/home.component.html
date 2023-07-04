@@ -1,17 +1,29 @@
-<div class="container">
-    <div>
-        <h1 class="bounce" style="display: inline-block;">
-            Hi,
-        </h1>
+<div #appRoot>
+    <app-loading-animation *ngIf="showLoading"></app-loading-animation>
+    <div [hidden]="showLoading">
+        <div class="screen-container">
+            <div class="container-left">
+                <div>
+                    <h1 class="bounce" style="display: inline-block;">
+                        Hi,
+                    </h1>
 
-        <h1 class="name">
-            I'm James Patzmann.
-        </h1>
-        <h2>
-            Programmer <a class="white">/</a> Developer <a class="white">/</a> Designer
-        </h2>
-        <h3>
-            And I built this website with <i>Angular</i>.
-        </h3>
+                    <h1 class="name">
+                        I'm James Patzmann
+                    </h1>
+                    <h2>
+                        Programmer <a class="white">/</a> Developer <a class="white">/</a> Designer
+                    </h2>
+                    <h3>
+                        And I built this website with <i>Angular</i>
+                    </h3>
+                </div>
+            </div>
+            <div class="container-right">
+
+                <img src="../../../../assets/James square.jpg" alt="img" class="img">
+
+            </div>
+        </div>
     </div>
 </div>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=League+Spartan');
+
+.screen-container {
+    position: absolute;
+    /* background-color: #1c1d25;*/
+    height: 100%;
+    width: 90%;
+    left: 0;
+    top: 0;
+    display: flex;
+    margin-left: 10%;
+    flex-direction: row;
+
+}
+
+.text-container {
+
+    /* background-color: #1c1d25;*/
+    height: 100%;
+    width: 20%;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+.skills-container {
+    height: 60%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    background-color: #1E1E1E;
+
+}
+
+.skills-text-container {
+    border-radius: 15px;
+    height:65%;
+    width: 90%;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1E1E1E;
+    box-shadow: 20px 20px 50px #0d0d0d;
+}
+
+.skills-column {
+    height: 100%;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical-border{
+    width: 1px;
+    height: 100%;
+    background-color: #b0b2c3;
+}
+
+
+
+
+
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+
+}
+
+h1.name {
+    margin-top: -15px;
+}
+
+h2 {
+    margin-top: -15px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #00eeff;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    flex-direction: horizontal;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #b0b2c3;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+    margin-top: 50px;
+}
+
+.white {
+    color: #b0b2c3;
+}
+
+.skills-text-header{
+    height: 20%;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+}
+
+.skills-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-text-info{
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    color: #00eeff;
+    font-family: 'League Spartan', Helvetica, Arial, sans-serif;
+}
