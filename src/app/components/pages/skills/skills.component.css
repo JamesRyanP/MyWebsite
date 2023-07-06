@@ -28,7 +28,7 @@
 
 
 .skills-container {
-    height: 60%;
+    height: 70%;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -123,8 +123,8 @@ h3 {
 }
 
 .skills-text-info{
-    line-height: 50px;
-    font-size: 20px;
+    line-height: 60px;
+    font-size: 25px;
     font-weight: 100;
     letter-spacing: 1px;
     color: #00eeff;
